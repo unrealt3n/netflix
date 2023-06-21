@@ -6,11 +6,11 @@ function onGetStart(e) {
     let input2 = document.querySelector('#email2Input').value;
     let email = (e.target.id == 'email1') ? input1 : input2;
     
-    if(email){
+    if(email.includes('@' && '.com')){
         alert( 'received your email '+ email);
         document.querySelector('#email2Input').value = '';
         document.querySelector('#email1Input').value = '';
     }else{
-        alert( 'cannot be empty');
+        alert( 'make sure form in filled and given a valid email');
     }
 }
