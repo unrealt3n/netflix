@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,600&display=swap');
+
 input {
     color: #fff;
 }
@@ -18,6 +19,12 @@ body {
 input {
     outline: none;
     border: none;
+}
+
+.errorMsg {
+    display: none;
+    color: #ff0000;
+    font-size: 18px;
 }
 
 /* header */
@@ -339,7 +346,7 @@ nav button {
     .home p {
         font-size: 1rem;
     }
-    
+
     .home h3 {
         font-size: 1rem;
         line-height: 2rem;
@@ -371,6 +378,10 @@ nav button {
 @media screen and (max-width:500px) {
     nav {
         padding: 10px 20px;
+    }
+
+    .btn-eng {
+        padding: 5px 20px;
     }
 
     .header {
@@ -408,24 +419,12 @@ nav button {
         font-size: 15px;
         width: 35%;
         height: 30%;
-        bottom: 40px;
     }
 
     nav img {
         width: 10px;
         height: 20px;
     }
-
-    nav .btn-eng {
-        padding: 5px 10px;
-
-    }
-
-    /* .img-col img{
-        width: 100%;
-        height: 100%;
-    } */
-
 
     .email {
         height: 150px;
@@ -468,3 +467,34 @@ nav button {
     }
 }
 
+
+@media screen and (max-width:380px) {
+    nav{
+        padding: 20px 5px;
+    }
+
+    .header img {
+        width: 80px;
+    }
+
+    .btn-eng span {
+        display: none;
+
+    }
+
+    .btn-eng.btn-sgn {
+        padding: 1px 0px;
+    }
+
+    .email button{
+        width: 115px;
+    }
+    .email h2{
+        font-size: 11px;
+    }
+   
+    /* .btn-sgn {
+        padding: 3px 3px;
+        font-size: 11px;
+    } */
+}
